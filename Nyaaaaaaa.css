@@ -1,7 +1,6 @@
 p{
-    width: 100%;
-    font-size: 10rem;
+    width: 100vw;
+    font-size: 7rem;
     text-align: center;
-    vertical-align: middle;
     margin: 0 auto
 }
