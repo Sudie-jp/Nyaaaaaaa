@@ -12,21 +12,21 @@ image.addEventListener(
 	function() {
 		imageWidthHalf = Math.floor(this.width / 2);
 		imageHeightHalf = Math.floor(this.height / 2);
-		document.addEventListener("mousemove", onMouseEvent, false);
-		document.addEventListener("touchstart", onTouchEvent, false);
-		document.addEventListener("touchmove", onTouchEvent, false);
+		document.addEventListener("click", click, false);
+		document.addEventListener("touchstart", touch, false);
+		document.addEventListener("touchmove", touch, false);
 	},
 	false
 );
 image.src = "Nyaaaaaaa.png";
-function onMouseEvent(event) {
+function click(event) {
 	context.drawImage(
 		image,
 		event.clientX - imageWidthHalf,
 		event.clientY - imageHeightHalf
 	);
 }
-function onTouchEvent(event) {
+function touch(event) {
 	event.preventDefault();
 	for (var i = 0; i < event.touches.length; i++) {
 		context.drawImage(
