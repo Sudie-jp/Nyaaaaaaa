@@ -2,5 +2,15 @@ p{
     width: 100vw;
     font-size: 7rem;
     text-align: center;
-    margin: 0 auto
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+canvas{
+    position: relative;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
 }
